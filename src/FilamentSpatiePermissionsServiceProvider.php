@@ -3,13 +3,10 @@
 namespace Almooradi\FilamentSpatiePermissions;
 
 use Almooradi\FilamentSpatiePermissions\Filament\Resources\RoleResource;
-use Almooradi\FilamentSpatiePermissions\Policies\RolePolicy;
-use Filament\PluginServiceProvider;
-use Illuminate\Support\Facades\Gate;
 use Spatie\LaravelPackageTools\Package;
-use Spatie\Permission\Models\Role;
+use Illuminate\Support\ServiceProvider;
 
-class FilamentSpatiePermissionsServiceProvider extends PluginServiceProvider
+class FilamentSpatiePermissionsServiceProvider extends ServiceProvider
 {
 	protected array $resources = [
 		RoleResource::class,
